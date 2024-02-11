@@ -1,0 +1,114 @@
+* {
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 2px solid;
+  width: 600px;
+  padding: 20px;
+  border-radius: 3px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.course,
+.btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #0039fe;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.course-sale {
+  position: absolute;
+  top: -10;
+  left: -30;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  rotate: -30deg;
+}
+
+.course-img {
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.road-map-title {
+  margin: 20px 0 5px;
+}
+
+.road-map-sections {
+  display: inline-block;
+  border: 2px black solid;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.html-course {
+  border-color: orange;
+}
+
+.css-course {
+  border-color: blue;
+}
+
+.JS-course {
+  border-color: yellow;
+}
+
+.course-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.course-details-button:link,
+.course-details-button:visited {
+  color: black;
+  font-weight: 100;
+}
+
+.course-details-button:hover,
+.course-details-button:active {
+  text-decoration: none;
+}
+
+.course-description {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 20px 0px 5px;
+}
+
+.list {
+  list-style: square;
+  font-size: 16px;
+  margin: 0 0 20px 20px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: #4777ff;
+}

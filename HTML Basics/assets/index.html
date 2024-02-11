@@ -7,9 +7,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>The Learning platform that you were waiting for</title>
+    <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
-    <header>
+  <div class="container">
+    <header class="main-header">
     <h1>✨ Almdrasa ✨</h1>
     <nav aria-label="primary-navigation">
     <a href="courses.html">Courses</a>
@@ -18,15 +20,21 @@
     </nav>
     <nav aria-label="language-navigation">
       <a href="index.html">Engilsh</a>
+      <span class="seperator">|</span>
       <a href="index-ar.html">اللغة العربية</a>
     </nav>
   </header>
-  <article>
+  <article class="post-header">
     <h2>The Learning Platform that you where waiting for</h2>
     <img src="img/mohamed-abusrea.jpg" alt="author image" width="50" height="50">
 
-    <p>Posted by <strong>Mohamed Abusrea</strong> on Saturday, July 2nd 2022</p>
-    <img src="img/post-img.jpg" alt="image of elmadrasa" width="500" height="200"/>
+    <p id="author">Posted by <strong>Mohamed Abusrea</strong> on Saturday, July 2nd 2022</p>
+    <img src="img/post-img.jpg" alt="image of elmadrasa" class="post-img"/>
+    <div class="reactions">
+      <button>like</button>
+      <button>celebrate</button>
+      <button>love</button>
+    </div>
     <p>
       <em>Almdrasa</em> is a new learning platform that tries to fill the gab in
       the Arabic content. The idea is to find the best programming courses in
@@ -66,20 +74,23 @@
     <p>That's it for now. See you in the next one 👋!</p>
   </article>
   <aside>
-    <h3>Related Posts</h3>
+    <h4>Related Posts</h4>
     <ul>
-      <li>
+      <li class="related-posts">
         <img src="img/related-1.jpg" width="75px" height="75px">
         <a href="#">Get styling with Css</a>
-        <p>By mohamed-abusrea</p>
+        <p class="related-author">By mohamed-abusrea</p>
       </li>
-      <li>
+      <li class="related-posts">
         <img src="img/related-2.jpg" width="75px" height="75px">
         <a href="#">Get started by javascript</a>
-        <p>By Ahmed Fathy</p>
+        <p class="related-author">By Ahmed Fathy</p>
       </li>
     </ul>
   </aside>
-  <footer>Copyright &copy; 2022 by Almadrasa</footer>
+  <footer>
+    <p id="copyright" class="copyright text"> Copyright &copy; 2022 by Almadrasa </p>
+  </footer>
+</div>
   </body>
 </html>

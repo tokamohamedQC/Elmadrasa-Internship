@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+h2::after {
+  content: "Trending ☕";
+  background-color: #109ba0;
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 30px;
+  margin-top: 14px;
+  border-radius: 3px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-posts {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 60px;
+  height: 80px;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+aside {
+  background-color: #f7f7f7;
+  padding: 50px 0px;
+  width: 500px;
+  border-radius: 3px;
+}
+
+a:link {
+  color: #109ba0;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.seperator {
+  margin-right: 30px;
+  margin-left: 0px;
+}
+
+a:visited {
+  color: #109ba0;
+}
+
+a:hover {
+  color: #13bec4;
+  font-weight: bold;
+  text-decoration: underline wavy blue;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-header {
+  margin-bottom: 60px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* RTL styles */
+[dir="rtl"] a:link {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+[dir="rtl"] nav a:link {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+[dir="rtl"] nav a:link:last-child {
+  margin-left: 0px;
+}
+
+[dir="rtl"] .language-nav a:link:last-child {
+  margin-left: 0px;
+}
+
+[dir="rtl"] h1::first-letter {
+  margin-left: 0px;
+}
+
+[dir="rtl"] h2::after {
+  margin-left: 0px;
+  margin-right: 30px;
+}
+
+[dir="rtl"] .reactions {
+  right: auto;
+  left: 50px;
+}
+
+[dir="rtl"] .seperator {
+  margin-right: 0px;
+  margin-left: 30px;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+.reactions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
