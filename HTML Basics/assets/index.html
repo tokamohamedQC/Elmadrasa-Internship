@@ -13,22 +13,27 @@
   <div class="container">
     <header class="main-header">
     <h1>✨ Almdrasa ✨</h1>
-    <nav aria-label="primary-navigation">
+    <div class="nav-content">
+    <nav aria-label="primary-navigation" class="main-nav">
     <a href="courses.html">Courses</a>
     <a href="#">Blog</a>
     <a href="#">Contact Us</a>
     </nav>
-    <nav aria-label="language-navigation">
+    <nav aria-label="language-navigation" class="language-nav">
       <a href="index.html">Engilsh</a>
       <span class="seperator">|</span>
       <a href="index-ar.html">اللغة العربية</a>
     </nav>
+  </div>
   </header>
+
   <article class="post-header">
     <h2>The Learning Platform that you where waiting for</h2>
-    <img src="img/mohamed-abusrea.jpg" alt="author image" width="50" height="50">
+    <div class="author-content">
+    <img class="author-img" src="img/mohamed-abusrea.jpg" alt="author image" width="50" height="50">
 
-    <p id="author">Posted by <strong>Mohamed Abusrea</strong> on Saturday, July 2nd 2022</p>
+    <p id="author" class="author">Posted by <strong>Mohamed Abusrea</strong> on Saturday, July 2nd 2022</p>
+  </div>
     <img src="img/post-img.jpg" alt="image of elmadrasa" class="post-img"/>
     <div class="reactions">
       <button>like</button>
@@ -75,19 +80,20 @@
   </article>
   <aside>
     <h4>Related Posts</h4>
-    <ul>
+    <ul class="related">
       <li class="related-posts">
         <img src="img/related-1.jpg" width="75px" height="75px">
-        <a href="#">Get styling with Css</a>
+        <a class="related-link" href="#">Get styling with Css</a>
         <p class="related-author">By mohamed-abusrea</p>
       </li>
       <li class="related-posts">
         <img src="img/related-2.jpg" width="75px" height="75px">
-        <a href="#">Get started by javascript</a>
+        <a class="related-link" href="#">Get started by javascript</a>
         <p class="related-author">By Ahmed Fathy</p>
       </li>
     </ul>
   </aside>
+
   <footer>
     <p id="copyright" class="copyright text"> Copyright &copy; 2022 by Almadrasa </p>
   </footer>

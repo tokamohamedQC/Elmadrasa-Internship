@@ -5,6 +5,9 @@
     <meta name="description" content="share tech news">
     <meta name="keywords" content="almadrasa, tech, html, css, javascript, programming, code, frontend, backend, fullstack">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
     
     <title>منصة التعليم التي كنت تنتظرها</title>
     <link href="style.css" rel="stylesheet"/>
@@ -13,23 +16,28 @@
     <div class="container">
       <header class="main-header">
     <h1>✨ المدرسة ✨</h1>
-    <nav aria-label="primary-navigation">
+    <div class="nav-content">
+    <nav aria-label="primary-navigation" class="main-nav">
       <a href="courses.html">كورسات</a>
       <a href="#">مقالات</a>
       <a href="#">اتصل بنا</a>
       </nav>
-      <nav aria-label="language-navigation">
+      <nav aria-label="language-navigation" class="language-nav">
         <a href="index.html">Engilsh</a>
         <span class="seperator">|</span>
         <a href="index-ar.html">اللغة العربية</a>
       </nav>
+    </div>
     </header>
+    <div class="row">
   <article class="post-header">
     <h2>منصة التعليم التي كنت تنتظرها</h2>
-    <img src="img/mohamed-abusrea.jpg" alt="author image" width="50" height="50">
+    <div class="author-content">
+    <img class="author-img" src="img/mohamed-abusrea.jpg" alt="author image" width="50" height="50">
 
-    <p>كُتب بواسطة <strong> محمد أبوسريع </strong>في يوم السبت, 2 يوليو 2022 </p>
-    <img src="img/post-img.jpg" alt="image of elmadrasa" width="500" height="200"/>
+    <p id="author" class="author">كُتب بواسطة <strong> محمد أبوسريع </strong>في يوم السبت, 2 يوليو 2022 </p>
+  </div>
+    <img src="img/post-img.jpg" alt="image of elmadrasa" class="post-img"/>
     <div class="reactions">
       <button>like</button>
       <button>celebrate</button>
@@ -72,19 +80,20 @@
   </article>
   <aside>
     <h3>مشاريع متعلقة</h3>
-    <ul>
-      <li>
+    <ul class="related">
+      <li class="related-posts">
         <img src="img/related-1.jpg" width="75px" height="75px">
-        <a href="#">Get styling with Css</a>
-        <p>By mohamed-abusrea</p>
+        <a class="related-link" href="#">Get styling with Css</a>
+        <p class="related-author">By mohamed-abusrea</p>
       </li>
-      <li>
+      <li class="related-posts">
         <img src="img/related-2.jpg" width="75px" height="75px">
-        <a href="#">Get started by javascript</a>
-        <p>By Ahmed Fathy</p>
+        <a class="related-link" href="#">Get started by javascript</a>
+        <p class="related-author">By Ahmed Fathy</p>
       </li>
     </ul>
   </aside>
+</div>
   <footer>Copyright &copy; 2022 by Almadrasa</footer>
 </div>
   </body>

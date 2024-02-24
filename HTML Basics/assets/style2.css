@@ -7,24 +7,25 @@
 
 .container {
   border: 2px solid;
-  width: 600px;
+  width: 770px;
   padding: 20px;
   border-radius: 3px;
   margin: 0 auto;
   position: relative;
 }
 
-.course,
-.btn {
+.course {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #0039fe;
-  color: white;
-  border-radius: 3px;
+  border: 2px solid #0039fe;
+  background-color: transparent;
+  color: #0039fe;
   padding: 10px 0px;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .course-sale {
@@ -40,7 +41,9 @@
 
 .course-img {
   border-radius: 3px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  /* margin-bottom: 0px; */
 }
 
 .price {
@@ -53,7 +56,6 @@
 }
 
 .road-map-sections {
-  display: inline-block;
   border: 2px black solid;
   padding: 5px 10px;
   border-radius: 3px;
@@ -76,7 +78,7 @@
   font-size: 12px;
   font-weight: bold;
   color: gray;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .course-details-button:link,
@@ -94,6 +96,7 @@
   font-size: 16px;
   text-transform: capitalize;
   margin: 20px 0px 5px;
+  margin-top: 0px;
 }
 
 .list {
@@ -107,8 +110,65 @@
   cursor: pointer;
   transition: 0.3s;
   padding: 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #0039fe;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  /* margin-top: 20px; */
 }
 
 .btn:hover {
   background-color: #4777ff;
+}
+
+/* .div-body::after {
+  content: "";
+  clear: both;
+  display: block;
+} */
+
+/* .div-float:first-child {
+  padding-right: 30px;
+}
+
+.div-float {
+  float: left;
+  width: 240px;
+} */
+
+.div-body {
+  display: flex;
+  gap: 20px;
+}
+
+.div-column {
+  flex: 1;
+}
+
+.course {
+  border-radius: 3px solid #0039fe;
+}
+
+.roadmap-list {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+/* CSS Grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.course,
+.btn {
+  grid-column: 1/-1;
 }
